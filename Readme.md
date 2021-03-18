@@ -6,7 +6,7 @@ S. Tejaswi Digumarti, Joseph Daniel, Ahalya Ravendran and Donald G. Dansereau,
 under review for submission at IROS 2021.  
 
 **Authors**: [Tejaswi Digumarti](https://tejaswid.github.io), Joseph Daniel    
-**Other Contributors**: Ahalya Ravendran, [Donald G. Dansereau](https://roboticimaging.org/)
+**Other Contributors**: Ahalya Ravendran, [Donald G. Dansereau](https://roboticimaging.org/)  
 **Maintainer**: Tejaswi Digumarti  
 
 For further information please see the [Project Website](https://roboticimaging.org/Projects/LearnLFOdo).
