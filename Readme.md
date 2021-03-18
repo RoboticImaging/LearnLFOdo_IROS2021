@@ -61,21 +61,21 @@ initialized. The lightfield formats are the following.
    - `focalstack`: A focal stack image formed by layering images from all the cameras of the multi-aperture camera
     and computing the average intensity at each pixel. The plane of focus is determined by the amount by which 
     each image is shifted (vertically or horizontally), before adding it to the image from the central camera.
-    The function [`load_multiplane_focalstack`](../master/epimodule.py#L276) does this.
+    The function [`load_multiplane_focalstack`](../master/epimodule.py#L356) does this.
    
    - `stack`: This is nothing but a concatenation of all the images from all the cameras, to get a
     3*N channel (colour) or N channel (grayscale) image where N is the number of cameras.
-    The function [`load_stacked_epi`](../master/epimodule.py#L369) does this.
+    The function [`load_stacked_epi`](../master/epimodule.py#L488) does this.
     
    - `epi`: An epipolar plane image (EPI) is formed by taking horizontal or vertical slices of the images from the
    multi-array camera and concatenating these slices together. If vertical slices are taken and stacked horizontally,
     it will result in an image of size (height x N\*width) and if horizontal slices are taken and stacked vertically,
     it will result in an image of size (N\*height x width). 
-    The function [`load_tiled_epi`](../master/epimodule.py#L353) does this.
+    The function [`load_tiled_epi`](../master/epimodule.py#L470) does this.
 
 3. Prepare pytorch dataloaders for training and validation using the above dataloaders.  
 4. If the lightfield format is `epi`, then encoders [`RelativeEpiEncoder`](../master/lfmodels/EpiEncoder.py#L7) and
-[`EpiEncoder`](../master/lfmodels/EpiEncoder.py#L83) are loaded to encode the lightfield image into an image that forms
+[`EpiEncoder`](../master/lfmodels/EpiEncoder.py#L140) are loaded to encode the lightfield image into an image that forms
 the input to the Pose estimation network and the Disparity network respectively.  
 5. Load the Disparity and Pose estimation networks with pre-trained weights if available.    
 6. Train and validate over the specified number of epochs.  
@@ -87,4 +87,4 @@ Examples using this script with parameters set are in the [validation_scripts](.
 To infer just depth and not pose (e.g. for a single input image), then use [infer_depth](../master/infer_depth.py).
 
 ### File Description
-A detailed description of all the files can be found [here](../master/file_description.md).
+A detailed description of all the files can be found [here](../master/File_description.md).
