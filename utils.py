@@ -10,7 +10,6 @@ import os
 import math
 import pickle
 
-from click.core import batch
 from matplotlib import cm
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 from matplotlib.patches import FancyArrowPatch
