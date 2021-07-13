@@ -126,6 +126,6 @@ class LFPoseNet(nn.Module):
 
         pose = self.pose_pred(out_conv7)
         pose = pose.mean(3).mean(2)
-        pose = pose.view(pose.size(0), self.nb_ref_imgs, 6)
+        pose = 0.01 * pose.view(pose.size(0), self.nb_ref_imgs, 6)
 
         return pose
