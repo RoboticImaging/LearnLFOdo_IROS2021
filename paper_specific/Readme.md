@@ -7,4 +7,4 @@
 | [plot_trajectories_new.py](../master/paper_specific/plot_trajectories_new.py) | Plots trajectories. - Check for deprecation|
 | [rpe.sh](../master/paper_specific/rpe.sh) | Computes RPE.|
 | [visualize_depth_images_for_paper.py](../master/paper_specific/visualize_depth_images_for_paper.py) | Visualizes depth images for the paper.|
-| [visualize_disparity_images.py](../master/paper_specific/visualize_disparity images.py) | Visualizes disparity images.|
+| [visualize_disparity_images.py](../master/paper_specific/visualize_disparity_images.py) | Visualizes disparity images.|
